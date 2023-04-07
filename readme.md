@@ -1,5 +1,6 @@
 # Program For Average Of Three(3) Numbers.
 
+
 ```c
 #include <stdio.h>
 
@@ -15,9 +16,11 @@ int main(){
 }
 
 ```
-...
+---
+
 
 # Program For Convert Fernite To Celsius.
+
 
 ```c
 #include<stdio.h>
@@ -32,5 +35,4 @@ int main(){
     return 0;
 }
 ```
-
-...
+---
