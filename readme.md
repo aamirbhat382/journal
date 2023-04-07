@@ -16,11 +16,12 @@ int main(){
 }
 
 ```
-## input: 5 , 10 , 3 
-## output: 
-### Sum is 18
-### Avg is 6
-
+```
+Input: 5 , 10 , 3 
+Output:
+ Sum is 18
+ Avg is 6
+```: 
 ---
 
 
@@ -40,8 +41,10 @@ int main(){
     return 0;
 }
 ```
-## input: 76 
-## output: Celsicus is 24.444445
+```
+Input: 76 
+Output:
+```: Celsicus is 24.444445
 
 ---
 
@@ -64,6 +67,8 @@ int main(){
 
 
 ```
-## input: 40 
-## output: Months = 1 and Days = 10
+```
+Input: 40 
+Output:
+```: Months = 1 and Days = 10
 ---
