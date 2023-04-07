@@ -16,6 +16,11 @@ int main(){
 }
 
 ```
+## input: 5 , 10 , 3 
+## output: 
+### Sum is 18
+### Avg is 6
+
 ---
 
 
@@ -35,4 +40,30 @@ int main(){
     return 0;
 }
 ```
+## input: 76 
+## output: Celsicus is 24.444445
+
+---
+
+# Calculate Number of Months & Days.
+
+
+```c
+#include<stdio.h>
+
+
+int main(){
+    int months , days;
+    printf("Enter days\n");
+    scanf("%d", &days);
+    months=days/30;
+    days = days%30;
+    printf("Months = %d and Days = %d", months, days);
+    return 0;
+}
+
+
+```
+## input: 40 
+## output: Months = 1 and Days = 10
 ---
