@@ -1,4 +1,4 @@
-# Program For Average Of Three(3) Numbers.
+# #1 Program For Average Of Three(3) Numbers.
 
 ```c
 #include <stdio.h>
@@ -21,7 +21,7 @@ int main(){
 
 ---
 
-# Program For Convert Fernite To Celsius.
+# #2 Program For Convert Fernite To Celsius.
 
 ```c
 #include<stdio.h>
@@ -42,7 +42,7 @@ int main(){
 
 ---
 
-# Calculate Number of Months & Days.
+# #3 Calculate Number of Months & Days.
 
 ```c
 #include<stdio.h>
@@ -65,7 +65,7 @@ int main(){
 
 ---
 
-# Program To Check Weather a Letter is Vowel or Consonant
+# #4 Program To Check Weather a Letter is Vowel or Consonant
 
 ```c
 #include<stdio.h>
@@ -101,7 +101,7 @@ printf("You Have Entred %c Vowel Letter");
 
 ---
 
-# Program To Find Out Largest And Smallest Number
+# #5 Program To Find Out Largest And Smallest Number
 
 ```c
 #include<stdio.h>
@@ -136,7 +136,7 @@ int main(){
 
 ---
 
-# Program To Find Out Smallest Number
+# #6 Program To Find Out Smallest Number
 
 ```c
 #include<stdio.h>
@@ -172,7 +172,7 @@ int main(){
 
 ---
 
-# Simple Calculator Program
+# #7 Simple Calculator Program
 
 ```c
 #include <stdio.h>
@@ -219,7 +219,7 @@ int main()
 
 ---
 
-# Program To Check Student Grades Using Nested if-else
+# #8 Program To Check Student Grades Using Nested if-else
 
 ```c
 #include<stdio.h>
@@ -256,7 +256,7 @@ int main()
 
 ---
 
-# Program To Print Half Pyramid of \* (stars)
+# #9 Program To Print Half Pyramid of \* (stars)
 
 ```c
 #include <stdio.h>
@@ -289,7 +289,7 @@ int main() {
 
 ---
 
-# Program To Print Inverted Half Pyramid of \* (stars)
+# #10 Program To Print Inverted Half Pyramid of \* (stars)
 
 ```c
 #include <stdio.h>
@@ -324,7 +324,7 @@ int main()
 
 ---
 
-# Program To Print Half Pyramid of Numbers In Row
+# #11 Program To Print Half Pyramid of Numbers In Row
 
 ```c
 #include<stdio.h>
@@ -356,7 +356,9 @@ int main()
 
 ```
 ---
-# Program To Print Half Pyramid of Numbers In Column
+
+
+# #12 Program To Print Half Pyramid of Numbers In Column
 
 ```c
 #include<stdio.h>
@@ -389,7 +391,9 @@ int main()
 ```
 
 --- 
-# Program To print Fibanacci Series
+
+
+# #13 Program To print Fibanacci Series
 ```c
 #include <stdio.h>
 
@@ -421,7 +425,7 @@ int main()
 
 --- 
 
-# Program To Print Sum of Squares
+# #14 Program To Print Sum of Squares
 
 ```c
 #include <stdio.h>
@@ -449,7 +453,9 @@ int n, i, sum=0;
 ```
 
 ---
-# Program To  Print Factorial of a Number
+
+
+# #15 Program To  Print Factorial of a Number
 
 ```c
 #include <stdio.h>
