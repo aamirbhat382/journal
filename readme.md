@@ -1,6 +1,5 @@
 # Program For Average Of Three(3) Numbers.
 
-
 ```c
 #include <stdio.h>
 
@@ -14,7 +13,7 @@ int main(){
     printf("Avg is %d \n" , avg);
     return 0;
 }
-// Input: 5 , 10 , 3 
+// Input: 5 , 10 , 3
 // Output:
  //  Sum is 18
  //  Avg is 6
@@ -22,9 +21,7 @@ int main(){
 
 ---
 
-
 # Program For Convert Fernite To Celsius.
-
 
 ```c
 #include<stdio.h>
@@ -39,15 +36,13 @@ int main(){
     return 0;
 }
 
-// Input: 76 
+// Input: 76
 // Output: Celsicus is 24.444445
 ```
-
 
 ---
 
 # Calculate Number of Months & Days.
-
 
 ```c
 #include<stdio.h>
@@ -63,7 +58,7 @@ int main(){
     return 0;
 }
 
-// Input: 40 
+// Input: 40
 // Output: Months = 1 and Days = 10
 
 ```
@@ -104,10 +99,9 @@ printf("You Have Entred %c Vowel Letter");
 // Output: You Have Entred E Vowel Letter
 ```
 
+---
 
---- 
 # Program To Find Out Largest And Smallest Number
-
 
 ```c
 #include<stdio.h>
@@ -126,10 +120,10 @@ int main(){
         }
     }else
     {
-        
+
             printf("A is Greatest");
     }
-    
+
     return 0;
 }
 
@@ -140,10 +134,9 @@ int main(){
 
 ```
 
---- 
+---
 
-# Program To Find Out  Smallest Number
-
+# Program To Find Out Smallest Number
 
 ```c
 #include<stdio.h>
@@ -156,7 +149,7 @@ int main(){
             printf("A is Smallest\n");
         }else{
             printf("C is Smallest\n");
-          
+
 
         }
     }else
@@ -168,7 +161,7 @@ int main(){
             printf("C is Smallest\n");
         }
     }
-    
+
     return 0;
 }
 
@@ -177,10 +170,9 @@ int main(){
 
 ```
 
---- 
+---
 
-
-# Simple Calculator Program 
+# Simple Calculator Program
 
 ```c
 #include <stdio.h>
@@ -223,5 +215,256 @@ int main()
 
 // Input: 100, 10, 4
 //  Output: Answere is 10
+```
+
+---
+
+# Program To Check Student Grades Using Nested if-else
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int marks;
+
+    printf("Enter your Marks : \n");
+    scanf("%d", &marks);
+  if(marks<40){
+    printf("Failure You need some motivation");
+  }
+  else if(marks>=40 && marks<50){
+    printf("Grade:D");
+  }
+  else if (marks>=50 && marks<60){
+    printf("Grade:C");
+  }
+  else if (marks>=60 && marks<70){
+    printf("Grade:B");
+  }
+  else if(marks>=70 && marks<101){
+    printf("Excellent!!!");
+  }
+   else if(marks>100 && marks<1){
+    printf("Enter a Valid Marks");
+  }
+}
+
+// Input : 66
+// Output : Grade:B
+```
+
+---
+
+# Program To Print Half Pyramid of \* (stars)
+
+```c
+#include <stdio.h>
+
+int main() {
+  int i, j;
+  for(i=0; i<5; i++)
+  {
+    for(j=0; j<=i; j++){
+
+      printf("*");
+    }
+      printf("\n");
+
+  }
+  return 0;
+}
+
+// Input:
+// Output:
+/*
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
+*/
+
+```
+
+---
+
+# Program To Print Inverted Half Pyramid of \* (stars)
+
+```c
+#include <stdio.h>
+
+int main()
+{
+
+    int i, j;
+    for (i = 5; i >= 1; i--)
+    {
+        for (j = 1; j <= i; j++){
+
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+// Input:
+// Output:
+/*
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
+*/
+
+```
+
+---
+
+# Program To Print Half Pyramid of Numbers In Row
+
+```c
+#include<stdio.h>
+int main()
+{
+
+    int i, j;
+    for (i = 1; i <= 5; i++)
+    {
+        for (j = 1; j <= i; j++){
+
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+// Input:
+// Output:
+/*
+    1
+    2 2
+    3 3 3
+    4 4 4 4
+    5 5 5 5 5
+*/
+
+```
+---
+# Program To Print Half Pyramid of Numbers In Column
+
+```c
+#include<stdio.h>
+int main()
+{
+
+    int i, j;
+    for (i = 1; i <= 5; i++)
+    {
+        for (j = 1; j <= i; j++){
+
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+// Input:
+// Output:
+/*
+    1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4 5
+*/
+
+```
+
+--- 
+# Program To print Fibanacci Series
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n1 = 0, n2 = 1, i, num, sum = 0;
+    printf("Enter the number of elements: ");
+    scanf("%d", &num);
+    for (i = 1; i <= num; i++)
+    {
+        sum = n1 + n2;
+        printf("The value of %d numbers is %d\n ", num, sum);
+        n1 = n2;
+        n2 = sum;
+    }
+    return 0;
+}
+// Input: 5
+// Output: 
+/*
+    The value of 5 numbers is 1
+    The value of 5 numbers is 2
+    The value of 5 numbers is 3
+    The value of 5 numbers is 5
+    The value of 5 numbers is 8
+*/
+
+```
+
+--- 
+
+# Program To Print Sum of Squares
+
+```c
+#include <stdio.h>
+
+int main() {
+int n, i, sum=0;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  for(i=1; i<=n; i++){
+    sum = sum + (i*i);
+      printf("sum of squared %d numbers = %d\n", n, sum);
+  }
+  return 0;
+}
+// Input: 5
+// Output: 
+
+/*
+    sum of squared 1 numbers = 1
+    sum of squared 2 numbers = 5
+    sum of squared 3 numbers = 14
+    sum of squared 4 numbers = 30
+    sum of squared 5 numbers = 55
+*/
+```
+
+---
+# Program To  Print Factorial of a Number
+
+```c
+#include <stdio.h>
+
+int main() {
+int n, i, fact=1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  for(i=1; i<=n; i++){
+    fact = fact*i;
+  }
+  printf("Factorial of %d is %d", n, fact);
+  return 0;
+}
+// Input: 5
+// Output: Factorial of 5 is 120
 ```
 ---
