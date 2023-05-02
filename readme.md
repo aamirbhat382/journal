@@ -474,3 +474,113 @@ int n, i, fact=1;
 // Output: Factorial of 5 is 120
 ```
 ---
+
+# #16 Program To  Check Number is Armstrong Or Not
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int x, R, Q, a, sum = 0;
+    printf("Enter a Number\n");
+    scanf("%d", x);
+    printf("%d", x);
+    a = x;
+    while (x > 0)
+    {
+        R = x % 10;
+        sum = sum + (R * R * R);
+        x = x / 10;
+    }
+    if (sum == a)
+    {
+        printf("Armstrong Number!!!");
+    }
+    else
+    {
+        printf("Not a Armstrong Number");
+    }
+    return 0;
+}
+// Input: 87
+// Output: Not a Armstrong Number
+```
+---
+
+# #17 Program To  Search An Element in An Array
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    int i, key, var = 0;
+    printf("Enter number you want to search in the array: \n");
+    scanf("%d \n", &key);
+    for (i = 0; i < 10; i++)
+    {
+   
+        if (key == arr[i])
+        {
+            // printf("%d \n", arr[i]);
+            printf("key is present\n");
+            var = 1;
+        break;
+        }
+    }
+    if (var == 0)
+    {
+        printf("key is not present\n");
+    }
+    return 0;
+}
+// Input: 9
+// Output: key is present
+```
+---
+
+# #18 Program To  Maximum Element in An Array
+
+```c
+#include <stdio.h>>
+#include <limits.h>
+
+
+
+int main(){
+    int arr[5] = {0,1,2,4,9};
+    int max = INT_MIN;
+   
+    for(int i=0; i<5; i++){
+        if(arr[i]>max){
+            max = arr[i];
+        }
+    }
+  printf("%d", max);
+    return 0;
+}
+// Input: 
+// Output: 9
+```
+---
+
+# #19 Program To  Print Elements Of Array Without Indices
+```c
+#include <stdio.h>
+
+int main(){
+    int i;
+    int arr[5] = {1,2,3,4,5};
+    int *p = &arr[0];
+    for(i=0;i<5;i++){
+        printf("%d \n", *p);
+        p++;
+    }
+    return 0;
+}
+// Input: 
+// Output: 1,2,3,4,5 
+```
+---
