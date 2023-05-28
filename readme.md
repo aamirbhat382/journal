@@ -584,3 +584,182 @@ int main(){
 // Output: 1,2,3,4,5 
 ```
 ---
+
+# #20 Program To  Print Sum of Rows & Columns In 2D Array
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
+
+    int i, j, totalCol = 0;
+
+    for (i = 0; i < 2; i++)
+    {
+        int sumRows = 0;
+        int sumCol = 0;
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", arr[i][j]);
+            sumRows = sumRows + arr[i][j];
+            sumCol = sumCol + arr[j][i];
+            // printf("\n%d", sumCol);
+        }
+        printf("= %d", sumRows);
+        printf("\n");
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        printf("\n");
+    }
+    for (i = 0; i < 3; i++)
+    {
+
+        int sumCol = 0;
+        for (j = 0; j < 2; j++)
+        {
+
+            sumCol = sumCol + arr[j][i];
+        }
+
+        printf("%d\t", sumCol);
+    }
+
+    return 0;
+}
+// Input: 
+// Output: 1	2	3	= 6
+        // 4	5	6	= 15
+
+        // 5	7	9
+```
+---
+
+# #21 Program To  Transpose A Matrix Array
+```c
+#include <stdio.h>
+
+int main()
+{
+    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int i, j;
+    printf("Original matrix \n");
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", arr[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("Transposed matrix\n");
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", arr[j][i]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+// Input: 
+// Output:     Original matrix 
+            // 1	2	3	
+            // 4	5	6	
+            // 7	8	9	
+
+            // Transposed matrix
+            // 1	4	7	
+            // 2	5	8	
+            // 3	6	9
+```
+---
+# #22 Program To Print Sum Of Digonal Elements In 2D Array
+```c
+#include <stdio.h>
+
+int main()
+{
+    int sum = 0;
+    int A[3][3] = {{1, 2, 3},
+                   {4, 5, 6},
+                   {7, 8, 9}};
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (i == j)
+            {
+                sum = sum + A[i][j];
+            }
+        }
+    }
+    printf("Sum of digonal digits of the matrix is = %d", sum);
+    return 0;
+}
+// Input: 
+// Output: Sum of digonal digits of the matrix is = 15
+```
+---
+# #23 Strings In C
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char name[] = "Aamir";
+    char lastname[20] = "Hussain";
+    printf("%s\n", name);
+    strcat(name,lastname);
+    printf("%s\n",name);
+    strcpy(name,lastname);
+    printf("%s\n", name);
+    
+    return 0;
+}
+// Input: 
+// Output:     Aamir
+            // AamirHussain
+            // Hussain
+```
+---
+
+# #23 Structure In C
+```c
+#include <stdio.h>
+#include <string.h>
+struct book
+{
+    int page;
+    char title[50];
+    char author[20];
+    float price;
+} b1;
+
+int main(void)
+{
+
+    struct book(b1);
+    strcpy(b1.title, "let us c");
+    strcpy(b1.author, "kanatkar");
+    b1.page = 230;
+    b1.price = 44;
+
+    printf("Pages are %d\n", b1.page);
+    printf("Price is %f\n", b1.price);
+    printf("Title is %s\n", b1.title);
+    printf("Author is %s\n", b1.author);
+    return 0;
+}
+// Input: 
+// Output:     Pages are 230
+            // Price is 44.000000
+            // Title is let us c
+            // Author is kanatkar
+```
+---
